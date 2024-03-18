@@ -1,0 +1,11 @@
+name: GA_env
+channels:
+  - rdkit
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - pip:
+      - -r requirements.txt
+  - rdkit=2022.09.5
+  - xtb

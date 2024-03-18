@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = []
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[project]
+name = "Genetic_Algorithm_Nitrogen_Fixation"
+version = "1.0"
+description = "Genetic algorithm for nitrogen fixation"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+'numpy',
+'ase',
+'tabulate',
+'scipy',
+'networkx',
+'submitit',
+'rdkit',
+'pandas',
+'tomli',
+    'pathos',
+'hide_warnings',
+    'catalystGA @ git+https://github.com/juius/catalystGA.git#egg=magnus_playground',
+]

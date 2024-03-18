@@ -1,0 +1,10 @@
+numpy
+ase
+tabulate
+scipy
+networkx
+submitit
+rdkit
+pandas
+tomli
+hide_warnings
