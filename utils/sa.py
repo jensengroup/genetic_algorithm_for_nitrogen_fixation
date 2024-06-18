@@ -19,11 +19,11 @@ class SaScorer:
             [sa_target_score_clipped(lig.mol) for lig in ind.ligands]
             for ind in molecules
         ]
-        # TODO Better way of combining the individual scores
 
+        # Get the mean of all ligand SA scores
         sa_scores = [mean(scores) for scores in sa_scores_all]
 
-        # Scale with gaussian
+        # Scale with second gaussian
         sa_scores = [
             np.exp(-0.5 * np.power((score - 1) / 0.8, 2.0)) for score in sa_scores
         ]
