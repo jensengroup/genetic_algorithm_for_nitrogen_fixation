@@ -50,7 +50,7 @@ A list of possible arguments and their discriptions are seen below:
 | `--sa_screening`          | Decides if synthetic accessibility score is enabled. Highly recommended to turn this on.                             |
 | `--filename`              | Path to the database extract to create starting population.                                                          |
 | `--output_dir`            | Sets output directory for all files generated during generations.                                                    |
-| `--scratch`               | Path to the database extract to create starting population.                                                          |
+| `--scratch`             | Path to put any intermediate scratch files                                                                           |
 | `--cleanup`               | If enabled, all scoring files are removed after scoring. Only the optimized structures and their energies are saved. |
 | `--method`                | Which gfn method to use.                                                                                             |
 | `--timeout_min`           | How many minutes each slurm job is allowed to run                                                                    |
