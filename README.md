@@ -1,4 +1,4 @@
-# Discovery of nitrogen fixation catalysts with a Genetic Algorithm
+# Discovery of nitrogen fixation catalysts with genetic algorithms
 
 Code repository for the paper [Discovery of molybdenum based nitrogen fixation catalysts with genetic algorithms](https://pubs.rsc.org/en/Content/ArticleLanding/2024/SC/D4SC02227K).
 
