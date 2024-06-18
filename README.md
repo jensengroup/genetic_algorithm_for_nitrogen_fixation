@@ -1,29 +1,29 @@
-[ChemRxiv](linkb)
-
 # Discovery of nitrogen fixation catalysts with a Genetic Algorithm
 
+Code repository for the paper [Discovery of molybdenum based nitrogen fixation catalysts with genetic algorithms](https://pubs.rsc.org/en/Content/ArticleLanding/2024/SC/D4SC02227K).
 
 1. [Run](#how-to-run)
-2. [Parameters](#parameters)
+1. [Parameters](#parameters)
 
 ## How to run
 
-For simple use of the GA activate a conda environment with pip installed and do:
+To setup an environment for running the GA, activate a conda environment with pip installed and run:
 
-    pip install .
+```bash
+pip install .
+```
 
-Then ensure you have installed [`xtb`](https://xtb-docs.readthedocs.io/en/latest/setup.html) in the environment you run the script. 
+Then ensure you have installed [`xtb`](https://xtb-docs.readthedocs.io/en/latest/setup.html) in the environment.
 
-
-To do a GA run, activate the relevant environment and run:
+To do a simple GA run, activate the environment and run:
 
 ```
 python genetic_algorithm_driver.py --scoring_func calculate_score --partition kemi1 --generations 1 --filename data/ligands.smi --debug --population_size 4 --molecules_per_chunk 2 --cpus_per_chunk 2 --sa_screening --CovalentLigands 3 --DativeLigands 1 --opt loose --n_confs 2
 ```
 
-## Parameters
+## Input driver arguments
 
-A list of possible arguments.
+A list of possible arguments and their discriptions are seen below:
 
 | Arg                       | Description                                                                                                          |
 |---------------------------|----------------------------------------------------------------------------------------------------------------------|
@@ -54,7 +54,7 @@ A list of possible arguments.
 | `--cleanup`               | If enabled, all scoring files are removed after scoring. Only the optimized structures and their energies are saved. |
 | `--method`                | Which gfn method to use.                                                                                             |
 | `--timeout_min`           | How many minutes each slurm job is allowed to run                                                                    |
-| `--rns_prune`             | Pruning value for RDKit conformer embedding                                                                          |
+| `--rms_prune`             | Pruning value for RDKit conformer embedding                                                                          |
 | `--energy_cutoff`         | Sets energy cutoff on the conformer filtering.                                                                       |
 | `--opt`                   | Set optimization convergence criteria for xTB.                                                                       |
 

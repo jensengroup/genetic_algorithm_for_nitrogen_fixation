@@ -7,6 +7,7 @@ Example:
 
         $ python genetic_algorithm_driver.py --args
 """
+
 import argparse
 import logging
 import os
@@ -226,7 +227,7 @@ def main() -> NoReturn:
     # Get arguments as dict and add scoring function to dict.
     args_dict = vars(args)
 
-    # Create list of dicts for the distributed GAs
+    # Root output dir
     root = args.output_dir
 
     # Set Options for Molecule
